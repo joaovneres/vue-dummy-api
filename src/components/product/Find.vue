@@ -25,7 +25,16 @@
             </p>
             <h5 class="card-title my-1 mx-3">{{ product.title }}</h5>
             <p class="card-text my-1 mx-3">
+              {{ product.brand }}
+            </p>
+            <p class="card-text my-1 mx-3">
               {{ product.description }}
+            </p>
+            <p class="card-text my-1 mx-3">
+              Avaliação: {{ product.rating }}
+            </p>
+            <p class="card-text my-1 mx-3">
+              {{ product.stock }}
             </p>
             <router-link :to="'/product/' + product.id">
               <button type="button" class="btn btn-success col-12">Comprar</button>
